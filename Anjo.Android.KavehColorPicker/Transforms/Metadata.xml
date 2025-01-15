@@ -6,4 +6,10 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+	 
+  <remove-node path="/api/package[@name='ir.kotlin.kavehcolorpicker']/class[@name='KavehColorAlphaSlider']/method[@name='setOnAlphaChangedListener' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super java.lang.Float, kotlin.Unit&gt;']]"/>
+  <remove-node path="/api/package[@name='ir.kotlin.kavehcolorpicker']/class[@name='KavehColorPicker']/method[@name='setOnColorChangedListener' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function1&lt;? super java.lang.Integer, kotlin.Unit&gt;']]" />
+  <remove-node path="/api/package[@name='ir.kotlin.kavehcolorpicker']/class[@name='KavehHueSlider']/method[@name='setOnHueChangedListener' and count(parameter)=1 and parameter[1][@type='kotlin.jvm.functions.Function2&lt;? super java.lang.Float, ? super java.lang.Integer, kotlin.Unit&gt;']]" />
+
+
 </metadata>
